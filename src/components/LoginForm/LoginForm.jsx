@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { login } from '../../redux/authAction'; // Импортируйте экшен login из ваших действий
+import { login } from '../../redux/authAction'; 
 import './LoginForm.css';
 
 function LogInForm({ login }) {
@@ -51,16 +51,16 @@ function LogInForm({ login }) {
               />
             </div>
             <div className="FormField">
-              <a href="#" className="ForgotPasswordLink">
+              <p className="ForgotPasswordLink">
                 Forgot password?
-              </a>
+              </p>
             </div>
             <button onClick={handleLogin} className="SignInButton">
               Sign in
             </button>
             <div className="FormField">
               <p className="SignUpText">
-                Don't have an account? <a href="#" className="SignUpLink">Sign Up</a>
+                Don't have an account? <p className="SignUpLink">Sign Up</p>
               </p>
             </div>
           </form>
